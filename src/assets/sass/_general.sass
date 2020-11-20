@@ -33,6 +33,7 @@
         letter-spacing: normal
         text-align: center
         text-transform: uppercase
+        border: none
 .subheader
     display: flex
     justify-content: space-between
@@ -94,6 +95,7 @@
         letter-spacing: normal
         text-align: center
         text-transform: uppercase
+        border: none
 .events
     display: flex
     justify-content: flex-end
@@ -183,16 +185,15 @@
             font-weight: 300
             font-style: normal
             letter-spacing: normal
-.description
-    h3
-        margin: 66px 0 60px 0
-        color: #323232
-        font-size: 17px
-        font-weight: 300
-        font-style: normal
-        letter-spacing: normal
-        line-height: 30px
-        text-align: center
+.description > h3
+    margin: 66px 0 60px 0
+    color: #323232
+    font-size: 17px
+    font-weight: 300
+    font-style: normal
+    letter-spacing: normal
+    line-height: 30px
+    text-align: center
 .description_cards
     display: flex
     justify-content: space-between
@@ -204,8 +205,239 @@
     justify-content: space-between
     align-items: center
     flex-direction: column
+    position: relative
     &_circ
         width: 169px
         height: 170px
         border: 1px solid #c99c47
         border-radius: 100%    
+    &_img
+        position: absolute
+        top: 50px
+    &_text
+        color: #323232
+        font-size: 15px
+        font-weight: 300
+        font-style: normal
+        letter-spacing: normal
+        line-height: 24px
+        text-align: center
+    &_text > h3
+        font-size: 17px
+        font-weight: 500
+        font-style: normal
+        letter-spacing: normal
+        line-height: normal
+    &_btn
+        width: 120px
+        height: 38px
+        background-color: #d4c198
+        color: #ffffff
+        font-size: 13px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        text-align: center
+        border: none
+    &_label
+        color: #919191
+        font-size: 11px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        text-align: center
+.description
+    &_btns
+        display: flex
+        justify-content: center
+        margin-top: 39px
+        align-items: center
+.register_btn
+    width: 153px
+    height: 42px
+    margin-right: 15px
+    background-color: #c99c47
+    color: #ffffff
+    font-size: 13px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: normal
+    text-align: center
+    text-transform: uppercase
+    border: none
+.subsribe_btn
+    width: 153px
+    height: 42px
+    background-color: #323232
+    color: #ffffff
+    font-size: 13px
+    font-weight: 400
+    font-style: normal
+    letter-spacing: normal
+    text-align: center
+    text-transform: uppercase
+h1
+    color: #323232
+    font-size: 24px
+    font-weight: 500
+    font-style: normal
+    letter-spacing: normal
+    text-align: center
+    text-transform: uppercase
+.reviews
+    height: 417px
+    background: url('../img/bg/review_bg.png') center center/cover no-repeat
+    margin-top: 49px
+    padding-top: 54px
+
+.customers
+    display: flex
+    justify-content: center
+    align-items: center
+    &_circ
+        width: 121px
+        height: 121px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 14px
+        margin-bottom: 115px
+        background-color: #ffffff
+        border-radius: 100%
+    &_card
+        position: relative
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        margin: 40px 48px 61px 0
+    &_descr>h3
+        color: #323232
+        font-size: 17px
+        font-weight: 500
+        font-style: normal
+        letter-spacing: normal
+        text-align: justifyLeft
+    &_descr
+        width: 411px
+        height: 245px
+        background-color: #fff
+        padding: 26px 27px 61px 50px
+        &_date
+            width: 119px
+            height: 29px
+            background-color: black
+            opacity: 0.5
+            color: #ffffff
+            font-size: 9px
+            font-weight: 300
+            line-height: 24px
+            font-style: normal
+            letter-spacing: normal
+            text-align: center
+        &_text
+            color: #323232
+            font-size: 14px
+            font-weight: 300
+            font-style: normal
+            letter-spacing: normal
+            line-height: 22px
+            text-align: justifyLeft
+.video
+    height: 590px
+    padding: 60px 0 60px 0
+    &_img
+        margin-top: 25px
+        display: flex
+        justify-content: center
+    &_img>img
+
+.video>h2
+    color: #323232
+    font-size: 24px
+    font-weight: 500
+    font-style: normal
+    letter-spacing: normal
+    text-align: center
+    text-transform: uppercase
+.clients>h2
+    color: #323232
+    font-size: 24px
+    font-weight: 500
+    font-style: normal
+    letter-spacing: normal
+    text-align: center
+    text-transform: uppercase
+.clients
+    background: url('../img/bg/clients_bg.png')
+    height: 287px
+    padding: 44px 0 70px 0
+    &_block
+        display: flex
+        justify-content: space-between
+        text-align: center
+        margin-top: 33px
+    &_card
+        width: 180px
+        height: 123px
+        border: 1px solid #f8f3e9
+        background-color: #ffffff
+        display: flex
+        justify-content: center
+        align-items: center
+footer
+    height: 365px
+    background-color: #323232
+    padding: 48px 0 43px 0
+.links_block
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    &_cont
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_follow>a
+        color: #c99c47
+        font-size: 14px
+        font-weight: 400
+        font-style: normal
+        letter-spacing: normal
+        text-align: right
+        text-transform: uppercase
+.topforum_block
+    margin-right: 59px
+    margin-bottom: 70px
+h4
+    color: #c99c47
+    font-weight: 400
+    font-style: normal
+    letter-spacing: normal
+    line-height: normal
+.topforum_block>ul
+    color: #ffffff
+    font-family: Roboto
+    font-size: 14px
+    font-weight: 300
+    font-style: normal
+    letter-spacing: normal
+    line-height: 22px
+    text-align: left
+    list-style-type: none
+    direction: rtl
+
+.links_block_cont>.divider
+    width: 1px
+    height: 210px
+    background-color: #fff
+    opacity: 0.1
+    margin-right: 45px
+.contact_block
+    color: #ffffff
+    font-size: 14px
+    font-weight: 300
+    font-style: normal
+    letter-spacing: normal
+    line-height: 22px
+    text-align: justifyLeft
+    margin-bottom: 85px
+
